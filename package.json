@@ -39,7 +39,8 @@
   },
   "dependencies": {
     "base32.js": "0.0.1",
-    "browserify-aes": "^1.1.1"  
+    "browserify-aes": "^1.1.1",
+    "randombytes": "^2.0.5"    
   },
   "devDependencies": {
     "chai": "^3.4.1",
