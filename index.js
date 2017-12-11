@@ -2,6 +2,7 @@
 
 var base32 = require('base32.js');
 var crypto = require('browserify-aes');
+var randomBytes = require('randombytes');
 var url = require('url');
 var util = require('util');
 
@@ -559,7 +560,7 @@ exports.generate_key = util.deprecate(function (options) {
  * @return {String} The generated key.
  */
 exports.generateSecretASCII = function generateSecretASCII (length, symbols) {
-  var bytes = crypto.randomBytes(length || 32);
+  var bytes = randomBytes(length || 32);
   var set = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz';
   if (symbols) {
     set += '!@#$%^&*()<>?/[]{},.:;';
