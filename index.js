@@ -1,6 +1,6 @@
 'use strict';
 
-var base32 = require('base32.js');
+var base32 = require('thirty-two');
 var crypto = require('crypto-browserify');
 var url = require('url');
 var util = require('util');
